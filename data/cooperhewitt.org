@@ -1,0 +1,10 @@
+{
+    "name": "Cooper Hewitt Smithsonian National Design Museum",
+    "url": "https://cooperhewitt.org/",
+    "patterns": [
+	{
+	    "name": "common",
+	    "pattern": "/((?:[a-z0-9]+)-(?:[a-z0-9]+)-(?:[a-z0-9]+))/"
+	}
+    ]
+}

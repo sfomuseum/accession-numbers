@@ -1,0 +1,10 @@
+{
+    "name": "SFO Museum",
+    "url": "https://sfomuseum.org/",
+    "patterns": [
+	{
+	    "name": "common",
+	    "pattern": "/((?:\d+)\.(?:\d+)\.(?:\d+))/"
+	}
+    ]
+}
