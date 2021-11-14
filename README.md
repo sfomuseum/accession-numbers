@@ -23,7 +23,10 @@ The simplest version of a data file consists of `name` and `url` properties iden
     "patterns": [
 	{
 	    "name": "common",
-	    "pattern": "/((?:\d+)\.(?:\d+)\.(?:\d+))/"
+	    "pattern": "((?:\\d+)\\.(?:\\d+)\\.(?:\\d+))",
+	    "tests": {
+		"1994.18.175": 1
+	    }
 	}
     ]
 }
