@@ -32,6 +32,16 @@ The simplest version of a data file consists of `name` and `url` properties iden
 }
 ```
 
+### Patterns
+
+Regular expression patterns should match the entire accession number and an interior matches should be non-greedy.
+
+### Tests
+
+Tests for any given pattern are defined as a dictionary whose values are strings to match against (the current pattern) and whose values are the number of expected matches in that string.
+
+_Tests are run using the [cmd/test-runner](cmd/test-runner]) tool which is written in Go and uses the [regexp.FindStringSubmatch](https://pkg.go.dev/regexp#Regexp.FindStringSubmatch) method to find matches._
+
 ## Tests
 
 This packages comes with a command-line tool for running tests against some or all the files in the `data` directory. The tool is called `test-runner` and its source code can be found in the [cmd/test-runner](cmd/test-runner) folder. It has also been pre-compiled to run on Windows, Linux and Mac OS computers. (These binary versions are kept in the `bin/(OS)` folder.)
