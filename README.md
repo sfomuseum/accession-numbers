@@ -63,10 +63,20 @@ If you have the `make` application installed on your computer you can also simpl
 ```
 $> make tests
 bin/darwin/test-runner data/*.json
-2021/11/14 15:40:20 All tests pass for Cooper Hewitt Smithsonian National Design Museum
-2021/11/14 15:40:20 All tests pass for SFO Museum
+2021/11/14 16:19:59 All tests pass for Art Institute of Chicago
+2021/11/14 16:19:59 All tests pass for Cooper Hewitt Smithsonian National Design Museum
+2021/11/14 16:19:59 All tests pass for Denver Museum of Nature & Science
+2021/11/14 16:19:59 All tests pass for Getty Center
+2021/11/14 16:19:59 All tests pass for Metropolitan Museum of Art
+2021/11/14 16:19:59 All tests pass for Museum of Modern Art
+2021/11/14 16:19:59 All tests pass for National Air and Space Museum
+2021/11/14 16:19:59 All tests pass for National Gallery of Art
+2021/11/14 16:19:59 All tests pass for National Museum of Anthropology
+2021/11/14 16:19:59 All tests pass for National Museum of African American History and Culture
+2021/11/14 16:19:59 All tests pass for National Museum of American History
+2021/11/14 16:19:59 All tests pass for Smithsonian National Museum of Natural History
+2021/11/14 16:19:59 All tests pass for SFO Museum
 ```
-
 
 ## Help wanted
 

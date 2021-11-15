@@ -1,0 +1,16 @@
+{
+    "name": "National Museum of African American History and Culture",
+    "url": "https://nmaahc.si.edu/",
+    "patterns": [
+	{
+	    "name": "common",
+	    "pattern": "((?:\\d{4})\\.(?:\\d+)(?:\\.\\d+){0,2})",
+	    "tests": {
+		"2013.68.19": 1,
+		"2012.110": 1,
+		"2016.5.2.11": 1,
+		"2014.270.2": 1
+	    }
+	}
+    ]
+}

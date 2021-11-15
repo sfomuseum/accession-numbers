@@ -1,0 +1,14 @@
+{
+    "name": "Smithsonian National Museum of Natural History",
+    "url": "http://naturalhistory.si.edu/",
+    "patterns": [
+	{
+	    "name": "common",
+	    "pattern": "(USNM\\ (?:\\d+))",
+	    "tests": {
+		"USNM 364282": 1,
+		"USNM 139604": 1
+	    }
+	}
+    ]
+}
