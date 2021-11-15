@@ -9,6 +9,8 @@ import (
 	"regexp"
 )
 
+// START OF please reconcile me with cmd/data-docs
+
 type Organization struct {
 	Name     string     `json:"name`
 	URL      string     `json:"url"`
@@ -20,6 +22,8 @@ type Pattern struct {
 	Pattern string         `json:"pattern"`
 	Tests   map[string]int `json:"tests"`
 }
+
+// END OF please reconcile me with cmd/data-docs
 
 func main() {
 
