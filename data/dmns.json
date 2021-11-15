@@ -1,0 +1,21 @@
+{
+    "name": "Denver Museum of Nature & Science",
+    "url": "https://www.dmns.org",
+    "patterns": [
+	{
+	    "name": "common",
+	    "pattern": "((?:\\w+)(?:[\\.\\-]+)(?:\\d+[A-Z\\&\\-\\d]*))",
+	    "tests": {
+		"A1290.6": 1,
+		"A1396.24A&B": 1,
+		"BA21-849": 1,
+		"OS-239-1": 1,
+		"EGM.19492": 1,
+		"ZM.6700": 1,
+		"ZE.35094": 1,
+		"HS.2010-103-2": 1,		
+		"HS.2014-236-102": 1		
+	    }
+	}
+    ]
+}

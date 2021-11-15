@@ -72,6 +72,11 @@ bin/darwin/test-runner data/*.json
 
 Contributions for missing organizations and corrections for existing patterns are welcome.
 
+## Contributors
+
+* [Aaron Straup Cope](#)
+* [Bruce Wyman](#)
+
 ## See also
 
 * https://github.com/sfomuseum/ios-label-whisperer

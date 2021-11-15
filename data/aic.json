@@ -1,0 +1,17 @@
+{
+    "name": "Art Institute of Chicago",
+    "url": "https://www.artic.edu",
+    "patterns": [
+	{
+	    "name": "common",
+	    "pattern": "((?:\\d{4})\\.(?:\\d+[a-z\\-]*))",
+	    "tests": {
+		"1994.36": 1,
+		"1926.417": 1,
+		"1962.743a-c": 1,
+		"1964.336": 1,
+		"1926.224": 1
+	    }
+	}
+    ]
+}
