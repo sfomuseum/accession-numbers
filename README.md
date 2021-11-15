@@ -37,7 +37,7 @@ The simplest version of a data file consists of `name` and `url` properties iden
 
 ### Patterns
 
-Regular expression patterns should match the entire accession number and an interior matches should be non-greedy.
+Regular expression patterns should match the entire accession number and any interior matches should be non-greedy.
 
 ### Tests
 
