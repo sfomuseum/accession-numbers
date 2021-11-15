@@ -38,7 +38,7 @@ Regular expression patterns should match the entire accession number and an inte
 
 ### Tests
 
-Tests for any given pattern are defined as a dictionary whose values are strings to match against (the current pattern) and whose values are the number of expected matches in that string.
+Tests for any given pattern are defined as a dictionary whose values are strings to match against (the current pattern) and whose values are the number of expected matches for a corresponding string (key).
 
 _Tests are run using the [cmd/test-runner](cmd/test-runner]) tool which is written in Go and uses the [regexp.FindStringSubmatch](https://pkg.go.dev/regexp#Regexp.FindStringSubmatch) method to find matches._
 
