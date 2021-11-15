@@ -18,14 +18,17 @@ The simplest version of a data file consists of `name` and `url` properties iden
 
 ```
 {
-    "name": "SFO Museum",
-    "url": "https://sfomuseum.org/",
+    "name": "National Museum of African American History and Culture",
+    "url": "https://nmaahc.si.edu/",
     "patterns": [
 	{
 	    "name": "common",
-	    "pattern": "((?:\\d+)\\.(?:\\d+)\\.(?:\\d+))",
+	    "pattern": "((?:\\d{4})\\.(?:\\d+)(?:\\.\\d+){0,2})",
 	    "tests": {
-		"1994.18.175": 1
+		"2013.68.19": 1,
+		"2012.110": 1,
+		"2016.5.2.11": 1,
+		"2014.270.2": 1
 	    }
 	}
     ]
