@@ -95,6 +95,7 @@ Contributions for missing organizations and corrections for existing patterns ar
 
 ## Contributors
 
+* [nikhil trivedi](https://github.com/nikhiltri)
 * [Bruce Wyman](http://www.usd-mach.com/)
 
 ## See also
