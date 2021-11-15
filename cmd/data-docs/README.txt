@@ -1,9 +1,9 @@
 # Data sources
 
 {{ range $i, $o := .Orgs -}}
-## [{{ $o.Name }}]({{ $o.URL }})
+## [{{ $o.Name }}]({{ $o.Path }})
 
-* [{{ $o.Path }}]({{ $o.Path }})
+* [{{ $o.URL }}]({{ $o.URL }})
 
 ### Patterns
 
