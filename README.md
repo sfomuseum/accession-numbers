@@ -44,7 +44,7 @@ _Tests are run using the [cmd/test-runner](cmd/test-runner]) tool which is writt
 
 ## Tests
 
-This packages comes with a command-line tool for running tests against some or all the files in the `data` directory. The tool is called `test-runner` and its source code can be found in the [cmd/test-runner](cmd/test-runner) folder. It has also been pre-compiled to run on Windows, Linux and Mac OS computers. (These binary versions are kept in the `bin/(OS)` folder.)
+This packages comes with a command-line tool for running tests against some or all the files in the `data` directory. The tool is called `test-runner` and its source code can be found in the [cmd/test-runner](cmd/test-runner) folder. It has also been pre-compiled to run on Windows, Linux and Mac OS computers. (These binary versions are kept in the `bin/(YOUR-OS-HERE)` folders.)
 
 To run the `test-runner` tool type the following from a terminal window:
 
