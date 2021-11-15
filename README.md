@@ -84,8 +84,7 @@ Contributions for missing organizations and corrections for existing patterns ar
 
 ## Contributors
 
-* [Aaron Straup Cope](#)
-* [Bruce Wyman](#)
+* [Bruce Wyman](http://www.usd-mach.com/)
 
 ## See also
 
