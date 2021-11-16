@@ -153,7 +153,7 @@ func findMatches(text string, pat string) ([]string, error) {
 		}
 	}
 
-	log.Printf("MATCHES '%s', %v\n", text, matches)
+	// log.Printf("MATCHES '%s', %v\n", text, matches)
 	return matches, nil
 }
 
