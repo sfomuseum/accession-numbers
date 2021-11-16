@@ -6,7 +6,8 @@
 	    "name": "common",
 	    "pattern": "((?:\\d+)\\.(?:\\d+)\\.(?:\\d+))",
 	    "tests": {
-		"1994.18.175": 1
+		"1994.18.175": 1,
+		"This is an object\\nGift of Important Donor\\n1994.18.175\\n\\nThis is another object\\nAnonymouts Gift\\n1994.18.165": 2		
 	    }
 	}
     ]

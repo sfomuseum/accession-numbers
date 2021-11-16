@@ -7,6 +7,7 @@ import (
 	"log"
 	"os"
 	"regexp"
+	"strings"
 )
 
 // START OF please reconcile me with cmd/data-docs
@@ -68,26 +69,102 @@ func runTests(org *Organization) error {
 
 	for _, p := range org.Patterns {
 
-		re, err := regexp.Compile(p.Pattern)
+		for str, expected_count := range p.Tests {
 
-		if err != nil {
-			return fmt.Errorf("Failed to compile pattern '%s', %w", p.Name, err)
-		}
-
-		for str, expected := range p.Tests {
-
-			m := re.FindStringSubmatch(str)
-			count := len(m)
-
-			if count == 0 {
-				return fmt.Errorf("String '%s' failed to match pattern '%s'", str, p.Name)
+			// -1 means "to skip", for example if a particular test is being
+			// problamatic
+			
+			if expected_count == -1 {
+				continue
 			}
 
-			if (count - 1) != expected {
-				return fmt.Errorf("String '%s' failed to match pattern '%s' with bad count, expected %d but got %d", str, p.Name, expected, (count - 1))
+			matches, err := findMatches(str, p.Pattern)
+
+			if err != nil {
+				return fmt.Errorf("Failed to find matches for '%s' using '%s' (%s), unexpected error: %w", str, p.Pattern, org.Name, err)
+			}
+
+			count := len(matches)
+
+			if count != expected_count {
+				return fmt.Errorf("Failed to find matches for '%s' using '%s' (%s), expected %d matches but got %d", str, p.Pattern, org.Name, expected_count, count)
 			}
 		}
 	}
 
 	return nil
 }
+
+// START OF put me in a go-accession-numbers package
+
+func findMatches(text string, pat string) ([]string, error) {
+
+	// Specifically we are looking for accession numbers at the end
+	// of a buffer
+	
+	re_pat := fmt.Sprintf(".*?%s", pat)
+	re, err := regexp.Compile(re_pat)
+
+	if err != nil {
+		return nil, fmt.Errorf("Failed to compile pattern (%s), %w", re_pat, err)
+	}
+
+	matches := make([]string, 0)
+
+	// Just get rid of newlines to start with because they get parsed in to separate
+	// '\' and 'n' runes by Go.
+	
+	text = strings.Replace(text, `\n`, " ", -1)
+	buf := ""
+
+	for _, rune := range text {
+
+		char := string(rune)
+		switch char {
+		case " ":
+
+			found := find(buf, re)
+
+			// No matches so keep adding to buf - this might happen
+			// with accession numbers like 'Obj: 96681' which really
+			// does exist (AIC)
+			
+			if len(found) == 0 {
+				buf = fmt.Sprintf("%s%s", buf, char)
+				continue
+			}
+
+			for _, m := range found {
+				matches = append(matches, m)
+			}
+
+			buf = ""
+
+		default:
+			buf = fmt.Sprintf("%s%s", buf, char)
+		}
+
+	}
+
+	if buf != "" {
+
+		for _, m := range find(buf, re) {
+			matches = append(matches, m)
+		}
+	}
+
+	return matches, nil
+}
+
+func find(buf string, re *regexp.Regexp) []string {
+
+	m := re.FindStringSubmatch(buf)
+
+	if len(m) <= 1 {
+		return []string{}
+	}
+
+	return m[1:]
+}
+
+// END OF put me in a go-accession-numbers package
