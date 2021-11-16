@@ -100,4 +100,5 @@ Contributions for missing organizations and corrections for existing patterns ar
 
 ## See also
 
+* https://github.com/sfomuseum/swift-accession-numbers
 * https://github.com/sfomuseum/ios-label-whisperer
