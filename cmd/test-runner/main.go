@@ -87,7 +87,7 @@ func runTests(org *Organization) error {
 			count := len(matches)
 
 			if count != expected_count {
-				return fmt.Errorf("Failed to find matches for '%s' using '%s' (%s), expected %d matches but got %d", str, p.Pattern, org.Name, expected_count, count)
+				return fmt.Errorf("Failed to find matches for '%s' using '%s' (%s), expected %d matches but got %d (%v)", str, p.Pattern, org.Name, expected_count, count, matches)
 			}
 		}
 	}
@@ -153,6 +153,7 @@ func findMatches(text string, pat string) ([]string, error) {
 		}
 	}
 
+	log.Printf("MATCHES '%s', %v\n", text, matches)
 	return matches, nil
 }
 
