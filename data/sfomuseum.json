@@ -4,9 +4,14 @@
     "patterns": [
 	{
 	    "name": "common",
-	    "pattern": "((?:\\d+)\\.(?:\\d+)\\.(?:\\d+))",
+	    "pattern": "((?:L|R)?(?:\\d+)\\.(?:\\d+)\\.(?:\\d+)(?:\\s?[a-z\\s]+)?)",
 	    "tests": {
 		"1994.18.175": 1,
+		"R2021.0501.030": 1,
+		"2014.120.001": 1,
+		"2001.106.041 a": 1,
+		"L2021.0501.033 a": 1,
+		"1994.18.199a": 1,
 		"This is an object\\nGift of Important Donor\\n1994.18.175\\n\\nThis is another object\\nAnonymouts Gift\\n1994.18.165": 2		
 	    }
 	}
