@@ -15,13 +15,15 @@ import (
 type Organization struct {
 	Name     string     `json:"name`
 	URL      string     `json:"url"`
+	IIIFManifest string `json:"iiif_manifest"`
+	OEmbedProfile string `json:"oembed_profile"`
 	Patterns []*Pattern `json:"patterns"`
 }
 
 type Pattern struct {
 	Name    string         `json:"name"`
 	Pattern string         `json:"pattern"`
-	Tests   map[string]int `json:"tests"`
+	Tests   map[string][]string `json:"tests"`
 }
 
 // END OF please reconcile me with cmd/data-docs
@@ -69,12 +71,12 @@ func runTests(org *Organization) error {
 
 	for _, p := range org.Patterns {
 
-		for str, expected_count := range p.Tests {
+		for str, expected_results := range p.Tests {
 
-			// -1 means "to skip", for example if a particular test is being
+			// no results means 'skip', for example if a particular test is being
 			// problamatic
 			
-			if expected_count == -1 {
+			if len(expected_results) == 0 {
 				continue
 			}
 
@@ -84,10 +86,18 @@ func runTests(org *Organization) error {
 				return fmt.Errorf("Failed to find matches for '%s' using '%s' (%s), unexpected error: %w", str, p.Pattern, org.Name, err)
 			}
 
+			expected_count := len(expected_results)
 			count := len(matches)
 
 			if count != expected_count {
 				return fmt.Errorf("Failed to find matches for '%s' using '%s' (%s), expected %d matches but got %d (%v)", str, p.Pattern, org.Name, expected_count, count, matches)
+			}
+
+			for i, expected_value := range expected_results {
+
+				if matches[i] != expected_value {
+					return fmt.Errorf("Match %d failed for '%s' using '%s' (%s), expected '%s' but got '%s'", i, str, p.Pattern, org.Name, expected_value, matches[i])
+				}
 			}
 		}
 	}
