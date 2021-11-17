@@ -6,7 +6,6 @@ cli:
 	env GOOS=windows GOARCH=amd64 go build -o bin/windows/test-runner cmd/test-runner/main.go
 
 tests:
-	@make cli
 	bin/$(OS)/test-runner data/*.json
 
 data-docs:
