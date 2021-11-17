@@ -127,9 +127,13 @@ func findMatches(text string, pat string) ([]string, error) {
 	text = strings.Replace(text, `\n`, " ", -1)
 	buf := ""
 
+	seen := ""
+	
 	for _, rune := range text {
 
 		char := string(rune)
+		seen += char
+		
 		switch char {
 		case " ":
 
@@ -140,10 +144,38 @@ func findMatches(text string, pat string) ([]string, error) {
 			// does exist (AIC)
 			
 			if len(found) == 0 {
-				buf = fmt.Sprintf("%s%s", buf, char)
+				buf += char
 				continue
 			}
 
+			// In order to account for things like `2000.058.1185 a c` (sfomuseum)
+			// we need to continue read ahead testing buf until it *doesn't* match.
+			// That is, given `2000.058.1185 a c`:
+			// `2000.058.1185`       matches
+			// `2000.058.1185 `      matches
+			// `2000.058.1185 a`     matches
+			// `2000.058.1185 a`     matches
+			// `2000.058.1185 a `    matches
+			// `2000.058.1185 a c`   matches												
+			// `2000.058.1185 a c `  matches
+			// `2000.058.1185 a c (` does not match			
+
+			remaining := strings.Replace(text, seen, "", 1)
+
+			buf += char
+			
+			for _, r := range remaining {
+
+				buf += string(r)
+				found_more := find(buf, re)
+
+				if len(found_more) == 0 {
+					break
+				}
+
+				found = found_more
+			}
+			
 			for _, m := range found {
 				matches = append(matches, m)
 			}
