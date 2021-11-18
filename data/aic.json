@@ -1,9 +1,9 @@
 {
-    "name": "Art Institute of Chicago",
-    "url": "https://www.artic.edu",
+    "organization_name": "Art Institute of Chicago",
+    "organization_url": "https://www.artic.edu",
     "patterns": [
 	{
-	    "name": "common",
+	    "label": "common",
 	    "pattern": "((?:Obj: \\d+)|(?:[RXTNof\\d]{3,}(?:\\.|\\/)?[\\d\\.\\-,a-z]*))",
 	    "tests": {
 		"1994.36": [

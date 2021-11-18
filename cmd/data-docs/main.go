@@ -4,9 +4,10 @@ import (
 	_ "embed"
 	"encoding/json"
 	"flag"
+	"github.com/sfomuseum/go-accession-numbers"
 	"log"
 	"os"
-	"path/filepath"
+	_ "path/filepath"
 	"sort"
 	"text/template"
 	"time"
@@ -14,23 +15,6 @@ import (
 
 //go:embed README.txt
 var readme_t []byte
-
-// START OF please reconcile me with cmd/test-runner
-
-type Organization struct {
-	Name     string     `json:"name`
-	URL      string     `json:"url"`
-	Patterns []*Pattern `json:"patterns"`
-	Path     string     `json:"path,omitempty"`
-}
-
-type Pattern struct {
-	Name    string         `json:"name"`
-	Pattern string         `json:"pattern"`
-	Tests   map[string]int `json:"tests"`
-}
-
-// END OF please reconcile me with cmd/test-runner
 
 func main() {
 
@@ -44,7 +28,7 @@ func main() {
 	}
 
 	paths_lookup := make(map[string][]string)
-	org_lookup := make(map[string]*Organization)
+	org_lookup := make(map[string]*accessionnumbers.Definition)
 
 	for _, path := range flag.Args() {
 
@@ -56,25 +40,25 @@ func main() {
 
 		defer fh.Close()
 
-		var org *Organization
+		var def *accessionnumbers.Definition
 
 		dec := json.NewDecoder(fh)
-		err = dec.Decode(&org)
+		err = dec.Decode(&def)
 
 		if err != nil {
 			log.Fatalf("Failed to decode %s, %v", path, err)
 		}
 
-		paths, ok := paths_lookup[org.Name]
+		paths, ok := paths_lookup[def.OrganizationName]
 
 		if !ok {
 			paths = make([]string, 0)
 		}
 
 		paths = append(paths, path)
-		paths_lookup[org.Name] = paths
+		paths_lookup[def.OrganizationName] = paths
 
-		org_lookup[path] = org
+		org_lookup[path] = def
 	}
 
 	names := make([]string, 0)
@@ -85,13 +69,13 @@ func main() {
 
 	sort.Strings(names)
 
-	orgs := make([]*Organization, 0)
+	orgs := make([]*accessionnumbers.Definition, 0)
 
 	for _, n := range names {
 
 		for _, p := range paths_lookup[n] {
 			o := org_lookup[p]
-			o.Path = filepath.Base(p)
+			// o.Path = filepath.Base(p)
 			orgs = append(orgs, o)
 		}
 	}
@@ -99,7 +83,7 @@ func main() {
 	now := time.Now()
 
 	vars := struct {
-		Orgs         []*Organization
+		Orgs         []*accessionnumbers.Definition
 		LastModified time.Time
 	}{
 		Orgs:         orgs,

@@ -4,29 +4,10 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
+	"github.com/sfomuseum/go-accession-numbers"
 	"log"
 	"os"
-	"regexp"
-	"strings"
 )
-
-// START OF please reconcile me with cmd/data-docs
-
-type Organization struct {
-	Name     string     `json:"name`
-	URL      string     `json:"url"`
-	IIIFManifest string `json:"iiif_manifest"`
-	OEmbedProfile string `json:"oembed_profile"`
-	Patterns []*Pattern `json:"patterns"`
-}
-
-type Pattern struct {
-	Name    string         `json:"name"`
-	Pattern string         `json:"pattern"`
-	Tests   map[string][]string `json:"tests"`
-}
-
-// END OF please reconcile me with cmd/data-docs
 
 func main() {
 
@@ -48,169 +29,62 @@ func main() {
 
 		defer fh.Close()
 
-		var org *Organization
+		var def *accessionnumbers.Definition
 
 		dec := json.NewDecoder(fh)
-		err = dec.Decode(&org)
+		err = dec.Decode(&def)
 
 		if err != nil {
 			log.Fatalf("Failed to decode %s, %v", path, err)
 		}
 
-		err = runTests(org)
+		err = runTests(def)
 
 		if err != nil {
-			log.Fatalf("Failed to run tests for %s, %v", org.Name, err)
+			log.Fatalf("Failed to run tests for %s, %v", def.OrganizationName, err)
 		}
 
-		log.Printf("All tests pass for %s\n", org.Name)
+		log.Printf("All tests pass for %s\n", def.OrganizationName)
 	}
 }
 
-func runTests(org *Organization) error {
+func runTests(def *accessionnumbers.Definition) error {
 
-	for _, p := range org.Patterns {
+	for _, p := range def.Patterns {
 
 		for str, expected_results := range p.Tests {
 
 			// no results means 'skip', for example if a particular test is being
 			// problamatic
-			
+
 			if len(expected_results) == 0 {
-				log.Printf("[%s] SKIP %s\n", org.URL, str)				
+				log.Printf("[%s] SKIP %s\n", def.OrganizationURL, str)
 				continue
 			}
 
-			matches, err := findMatches(str, p.Pattern)
+			matches, err := accessionnumbers.FindMatches(str, p.Pattern)
 
 			if err != nil {
-				return fmt.Errorf("Failed to find matches for '%s' using '%s' (%s), unexpected error: %w", str, p.Pattern, org.Name, err)
+				return fmt.Errorf("Failed to find matches for '%s' using '%s' (%s), unexpected error: %w", str, p.Pattern, def.OrganizationName, err)
 			}
 
 			expected_count := len(expected_results)
 			count := len(matches)
 
 			if count != expected_count {
-				return fmt.Errorf("Failed to find matches for '%s' using '%s' (%s), expected %d matches but got %d (%v)", str, p.Pattern, org.Name, expected_count, count, matches)
+				return fmt.Errorf("Failed to find matches for '%s' using '%s' (%s), expected %d matches but got %d (%v)", str, p.Pattern, def.OrganizationName, expected_count, count, matches)
 			}
 
 			for i, expected_value := range expected_results {
 
 				if matches[i] != expected_value {
-					return fmt.Errorf("Match %d failed for '%s' using '%s' (%s), expected '%s' but got '%s'", i, str, p.Pattern, org.Name, expected_value, matches[i])
+					return fmt.Errorf("Match %d failed for '%s' using '%s' (%s), expected '%s' but got '%s'", i, str, p.Pattern, def.OrganizationName, expected_value, matches[i])
 				}
 			}
 
-			log.Printf("[%s] OK %s\n", org.URL, str)
+			log.Printf("[%s] OK %s\n", def.OrganizationURL, str)
 		}
 	}
 
 	return nil
 }
-
-// START OF put me in a go-accession-numbers package
-
-func findMatches(text string, pat string) ([]string, error) {
-
-	// Specifically we are looking for accession numbers at the end
-	// of a buffer
-	
-	re_pat := fmt.Sprintf(".*?%s", pat)
-	re, err := regexp.Compile(re_pat)
-
-	if err != nil {
-		return nil, fmt.Errorf("Failed to compile pattern (%s), %w", re_pat, err)
-	}
-
-	matches := make([]string, 0)
-
-	// Just get rid of newlines to start with because they get parsed in to separate
-	// '\' and 'n' runes by Go.
-	
-	text = strings.Replace(text, `\n`, " ", -1)
-	buf := ""
-
-	seen := ""
-	
-	for _, rune := range text {
-
-		char := string(rune)
-		seen += char
-		
-		switch char {
-		case " ":
-
-			found := find(buf, re)
-
-			// No matches so keep adding to buf - this might happen
-			// with accession numbers like 'Obj: 96681' which really
-			// does exist (AIC)
-			
-			if len(found) == 0 {
-				buf += char
-				continue
-			}
-
-			// In order to account for things like `2000.058.1185 a c` (sfomuseum)
-			// we need to continue read ahead testing buf until it *doesn't* match.
-			// That is, given `2000.058.1185 a c`:
-			// `2000.058.1185`       matches
-			// `2000.058.1185 `      matches
-			// `2000.058.1185 a`     matches
-			// `2000.058.1185 a`     matches
-			// `2000.058.1185 a `    matches
-			// `2000.058.1185 a c`   matches												
-			// `2000.058.1185 a c `  matches
-			// `2000.058.1185 a c (` does not match			
-
-			remaining := strings.Replace(text, seen, "", 1)
-
-			buf += char
-			
-			for _, r := range remaining {
-
-				buf += string(r)
-				found_more := find(buf, re)
-
-				if len(found_more) == 0 {
-					break
-				}
-
-				found = found_more
-			}
-			
-			for _, m := range found {
-				matches = append(matches, m)
-			}
-
-			buf = ""
-
-		default:
-			buf = fmt.Sprintf("%s%s", buf, char)
-		}
-
-	}
-
-	if buf != "" {
-
-		for _, m := range find(buf, re) {
-			matches = append(matches, m)
-		}
-	}
-
-	// log.Printf("MATCHES '%s', %v\n", text, matches)
-	return matches, nil
-}
-
-func find(buf string, re *regexp.Regexp) []string {
-
-	m := re.FindStringSubmatch(buf)
-
-	if len(m) <= 1 {
-		return []string{}
-	}
-
-	return m[1:]
-}
-
-// END OF put me in a go-accession-numbers package
