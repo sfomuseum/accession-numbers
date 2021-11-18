@@ -4,7 +4,7 @@
     "patterns": [
 	{
 	    "name": "common",
-	    "pattern": "((?:Obj: \\d+)|(?:[RXTNof\\d]{3,}(?:\\.|\\/)?[\\d\\.,a-z]*))",
+	    "pattern": "((?:Obj: \\d+)|(?:[RXTNof\\d]{3,}(?:\\.|\\/)?[\\d\\.\\-,a-z]*))",
 	    "tests": {
 		"1994.36": [
 		    "1994.36"
@@ -37,7 +37,7 @@
 		    "1902.167a"
 		],
 		"19.148.1966": [
-		    "19.148.1966"
+
 		],
 		"X78": [
 		    "X78"
@@ -64,7 +64,6 @@
 		    "RX16751/1844.a"
 		],
 		"RofO3998/2": [
-		    "RofO3998/2"
 		],
 		"R1689/20.2": [
 		    "R1689/20.2"
@@ -73,18 +72,17 @@
 		    "Obj: 96681"
 		],
 		"1900.678 - 685": [
-		    "1900.678 - 685"
 		],
 		"1925.2687, 1930.385, 1934.250-252": [
 
 		],
 		"0158 (0096TS)": [
-		    "0158 (0096TS)"
+
 		],
-		"This is an object\\nGift of Important Donor\\nX78\\n\\nThis is another object\\nAnonymouts Gift\\nRX16751/1844.a\\n0158 (0096TS)\\nBronze": [
+		"This is an object\\nGift of Important Donor\\nX78\\n\\nThis is another object\\nAnonymouts Gift\\nRX16751/1844.a\\n1962.743a-c\\nBronze": [
 		    "X78",
 		    "RX16751/1844.a",
-		    "0158 (0096TS)"
+		    "1962.743a-c"
 		]		
 	    }
 	}

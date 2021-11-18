@@ -99,6 +99,8 @@ func runTests(org *Organization) error {
 					return fmt.Errorf("Match %d failed for '%s' using '%s' (%s), expected '%s' but got '%s'", i, str, p.Pattern, org.Name, expected_value, matches[i])
 				}
 			}
+
+			log.Printf("[%s] OK %s\n", org.URL, str)
 		}
 	}
 
