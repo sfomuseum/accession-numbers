@@ -1,0 +1,24 @@
+{
+    "organization_name": "Virginia Museum of Fine Arts",
+    "organization_url": "https://www.vmfa.museum",
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "((?:\\d{2,4})\\.(?:\\d+)(?:\\.[0-9\\-]+)?)",
+	    "tests": {
+		"47.20.117": [
+		    "47.20.117"
+		],
+		"2017.166": [
+		    "2017.166"
+		],
+		"2014.369": [
+		    "2014.369"
+		],
+		"97.89.1-8": [
+		    "97.89.1-8"
+		]
+	    }
+	}
+    ]
+}
