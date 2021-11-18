@@ -1,12 +1,14 @@
 {
-    "name": "Cooper Hewitt Smithsonian National Design Museum",
-    "url": "https://cooperhewitt.org/",
+    "organization_name": "Cooper Hewitt Smithsonian National Design Museum",
+    "organization_url": "https://cooperhewitt.org/",
     "patterns": [
 	{
-	    "name": "common",
+	    "label": "common",
 	    "pattern": "((?:[a-z0-9]+)-(?:[a-z0-9]+)-(?:[a-z0-9]+))",
 	    "tests": {
-	    	"2007-27-30": 1
+	    	"2007-27-30": [
+		    "2007-27-30"
+		]
 	    }
 	}
     ]

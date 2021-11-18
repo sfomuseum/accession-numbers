@@ -1,16 +1,26 @@
 {
-    "name": "Getty Center",
-    "url": "https://www.getty.edu",
+    "organization_name": "Getty Center",
+    "organization_url": "https://www.getty.edu",
     "patterns": [
 	{
-	    "name": "common",
+	    "label": "common",
 	    "pattern": "((?:\\d+)\\.(?:\\d{2}|\\D{2})(?:\\.\\d+){0,3})",
 	    "tests": {
-		"2004.60.17": 1,
-		"84.XA.757.4.13": 1,
-		"70.AA.109": 1,
-		"2014.32": 1,
-		"2016.66": 1
+		"2004.60.17": [
+		    "2004.60.17"
+		],
+		"84.XA.757.4.13": [
+		    "84.XA.757.4.13"
+		],
+		"70.AA.109": [
+		    "70.AA.109"
+		],
+		"2014.32": [
+		    "2014.32"
+		],
+		"2016.66": [
+		    "2016.66"
+		]
 	    }
 	}
     ]

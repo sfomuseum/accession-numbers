@@ -1,20 +1,38 @@
 {
-    "name": "Denver Museum of Nature & Science",
-    "url": "https://www.dmns.org",
+    "organization_name": "Denver Museum of Nature & Science",
+    "organization_url": "https://www.dmns.org",
     "patterns": [
 	{
-	    "name": "common",
+	    "label": "common",
 	    "pattern": "((?:\\w+)(?:[\\.\\-]+)(?:\\d+[A-Z\\&\\-\\d]*))",
 	    "tests": {
-		"A1290.6": 1,
-		"A1396.24A&B": 1,
-		"BA21-849": 1,
-		"OS-239-1": 1,
-		"EGM.19492": 1,
-		"ZM.6700": 1,
-		"ZE.35094": 1,
-		"HS.2010-103-2": 1,		
-		"HS.2014-236-102": 1		
+		"A1290.6": [
+		    "A1290.6"
+		],
+		"A1396.24A&B": [
+		    "A1396.24A&B"
+		],
+		"BA21-849": [
+		    "BA21-849"
+		],
+		"OS-239-1": [
+		    "OS-239-1"
+		],
+		"EGM.19492": [
+		    "EGM.19492"
+		],
+		"ZM.6700": [
+		    "ZM.6700"
+		],
+		"ZE.35094": [
+		    "ZE.35094"
+		],
+		"HS.2010-103-2": [
+		    "HS.2010-103-2"
+		],		
+		"HS.2014-236-102": [
+		    "HS.2014-236-102"
+		]
 	    }
 	}
     ]
