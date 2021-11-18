@@ -70,7 +70,7 @@ Regular expression patterns should match the entire accession number and any int
 
 ### Tests
 
-Tests for any given pattern are defined as a dictionary whose values are strings to match against (the current pattern) and whose values are the number of expected matches for a corresponding string (key).
+Tests for any given pattern are defined as a dictionary whose values are strings to match against (the current pattern) and whose values are an array of expected matches for a corresponding string (key). Tests with empty "matches" arrays are skipped.
 
 _Tests are run using the [cmd/test-runner](cmd/test-runner]) tool which is written in Go and uses the [regexp.FindStringSubmatch](https://pkg.go.dev/regexp#Regexp.FindStringSubmatch) method to find matches._
 
