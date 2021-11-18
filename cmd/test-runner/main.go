@@ -77,6 +77,7 @@ func runTests(org *Organization) error {
 			// problamatic
 			
 			if len(expected_results) == 0 {
+				log.Printf("[%s] SKIP %s\n", org.URL, str)				
 				continue
 			}
 
