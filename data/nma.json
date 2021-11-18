@@ -1,14 +1,20 @@
 {
-    "name": "National Museum of Anthropology",
-    "url": "https://museu.ms/museum/details/16762",
+    "organization_name": "National Museum of Anthropology",
+    "organization_url": "https://museu.ms/museum/details/16762",
     "patterns": [
 	{
-	    "name": "common",
+	    "label": "common",
 	    "pattern": "((?:\\d+)\\.(?:\\d-\\d+))",
 	    "tests": {
-		"06.0-03266": 1,
-		"07.0-04968": 1,
-		"09.0-06366": 1
+		"06.0-03266": [
+		    "06.0-03266"
+		],
+		"07.0-04968": [
+		    "07.0-04968"
+		],
+		"09.0-06366": [
+		    "09.0-06366"
+		]
 	    }
 	}
     ]

@@ -18,17 +18,46 @@ The simplest version of a data file consists of `name` and `url` properties iden
 
 ```
 {
-    "name": "National Museum of African American History and Culture",
-    "url": "https://nmaahc.si.edu/",
+    "organization_name": "SFO Museum",
+    "organization_url": "https://sfomuseum.org/",
+    "iiif_manifest": "https://millsfield.sfomuseum.org/objects/{accession_number}/manifest",
+    "oembed_profile": "https://millsfield.sfomuseum.org/oembed/?url=https://millsfield.sfomuseum.org/objects/{accession_number}&format=json",
+    "object_url": "https://millsfield.sfomuseum.org/objects/{accession_number}",
     "patterns": [
 	{
-	    "name": "common",
-	    "pattern": "((?:\\d{4})\\.(?:\\d+)(?:\\.\\d+){0,2})",
+	    "label": "common",
+	    "pattern": "((?:L|R)?(?:\\d+)\\.(?:\\d+)\\.(?:\\d+)(?:\\.(?:\\d+))?(?:(?:\\s?[sa-z])+)?)",
 	    "tests": {
-		"2013.68.19": 1,
-		"2012.110": 1,
-		"2016.5.2.11": 1,
-		"2014.270.2": 1
+		"1994.18.175": [
+		    "1994.18.175"
+		],
+		"R2021.0501.030": [
+		    "R2021.0501.030"		    
+		],
+		"2014.120.001": [
+		    "2014.120.001"		    
+		],
+		"2001.106.041 a": [
+		    "2001.106.041 a"
+		],
+		"L2021.0501.033 a": [
+		    "L2021.0501.033 a"
+		],
+		"2002.135.017.042": [
+		    "2002.135.017.042"
+		],
+		"2000.058.1185 a c": [
+		    "2000.058.1185 a c"
+		],		
+		"1994.18.199a": [
+		    "1994.18.199a"
+		],
+		"This is an object\\nGift of Important Donor\\n1994.18.175\\n\\nThis is another object\\nAnonymouts Gift\\n1994.18.165 1994.18.199a\\n2000.058.1185 a c\\nOil on canvas": [
+		    "1994.18.175",
+		    "1994.18.165",
+		    "1994.18.199a",
+		    "2000.058.1185 a c"
+		]
 	    }
 	}
     ]

@@ -1,13 +1,17 @@
 {
-    "name": "Smithsonian National Museum of Natural History",
-    "url": "http://naturalhistory.si.edu/",
+    "organization_name": "Smithsonian National Museum of Natural History",
+    "organization_url": "http://naturalhistory.si.edu/",
     "patterns": [
 	{
-	    "name": "common",
+	    "label": "common",
 	    "pattern": "(USNM\\ (?:\\d+))",
 	    "tests": {
-		"USNM 364282": 1,
-		"USNM 139604": 1
+		"USNM 364282": [
+		    "USNM 364282"
+		],
+		"USNM 139604": [
+		    "USNM 139604"
+		]
 	    }
 	}
     ]

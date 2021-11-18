@@ -1,17 +1,31 @@
 {
-    "name": "Museum of Modern Art",
-    "url": "https://www.moma.org",
+    "organization_name": "Museum of Modern Art",
+    "organization_url": "https://www.moma.org",
     "patterns": [
 	{
-	    "name": "common",
+	    "label": "common",
 	    "pattern": "((?:[A-Z]{0,2}\\d+)\\.(?:\\d{4})\\.*(?:\\w*\\d*-*)*)",
 	    "tests": {
-		"302.2021.x1-x2": 1,
-		"146.2020": 1,
-		"203.2020": 1,
-		"284.2020.1": 1,
-		"PG731.2019": 1,
-		"This is an object\\nGift of Important Donor\\n302.2021.x1-x2\\n\\nThis is another object\\nAnonymouts Gift\\nPG731.2019 146.2020": 3
+		"302.2021.x1-x2": [
+		    "302.2021.x1-x2"
+		],
+		"146.2020": [
+		    "146.2020"
+		],
+		"203.2020": [
+		    "203.2020"
+		],
+		"284.2020.1": [
+		    "284.2020.1"
+		],
+		"PG731.2019": [
+		    "PG731.2019"
+		],
+		"This is an object\\nGift of Important Donor\\n302.2021.x1-x2\\n\\nThis is another object\\nAnonymouts Gift\\nPG731.2019 146.2020": [
+		    "302.2021.x1-x2",
+		    "PG731.2019",
+		    "146.2020"
+		]
 	    }
 	}
     ]
