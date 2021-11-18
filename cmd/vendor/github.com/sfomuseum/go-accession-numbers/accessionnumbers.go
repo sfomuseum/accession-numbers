@@ -3,7 +3,7 @@ package accessionnumbers
 // type Defintion provides a struct containing accession number patterns and URIs for an organization.
 type Definition struct {
 	// The name of the organization associated with this definition.
-	OrganizationName string `json:"organization_name`
+	OrganizationName string `json:"organization_name"`
 	// The URL of the organization associated with this definition.
 	OrganizationURL string `json:"organization_url"`
 	// A valid URI template (RFC 6570) used to generate the URL for an object given its accession number.

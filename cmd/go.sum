@@ -4,3 +4,5 @@ github.com/sfomuseum/go-accession-numbers v0.0.2 h1:HqdcbCsMevmJ/rkySfSVfrG8vuoI
 github.com/sfomuseum/go-accession-numbers v0.0.2/go.mod h1:zEnlXnSRlDInk2BQf+vdZbG545qrYW39b1D0Hha/jg0=
 github.com/sfomuseum/go-accession-numbers v0.0.3 h1:OuOgN62IlHzSEIQodr7X8bUsJCIdhUwGIBlYKhCS/MU=
 github.com/sfomuseum/go-accession-numbers v0.0.3/go.mod h1:zEnlXnSRlDInk2BQf+vdZbG545qrYW39b1D0Hha/jg0=
+github.com/sfomuseum/go-accession-numbers v0.0.4 h1:pJB2V7XGj7jyBcRicBn6G8eS6756spRzX6PdhxdQcpM=
+github.com/sfomuseum/go-accession-numbers v0.0.4/go.mod h1:zEnlXnSRlDInk2BQf+vdZbG545qrYW39b1D0Hha/jg0=
