@@ -12,7 +12,7 @@ The goal of this package is to have a collection of machine-readable regular exp
 
 ## Data
 
-Data for individual organizations are defined in [`data/{organization}.json`](data) files. These files lack a well-defined schema at this time.
+Data for individual organizations are defined in [`data/{organization}.json`](data) files. These files lack a [well-defined schema](https://github.com/sfomuseum/accession-numbers/issues/20) at this time.
 
 The simplest version of a data file consists of `name` and `url` properties identifying an organization and a `patterns` properties which contains one or more dictionaries containing regular expression patterns that can be used to isolate accession numbers in a body of text. For example:
 
