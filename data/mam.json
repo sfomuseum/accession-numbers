@@ -1,0 +1,27 @@
+{
+    "organization_name": "Milwaukee Art Museum",
+    "organization_url": "http://mam.org",
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "((?:M\\d{4})\\.(?:\\d+)(?:\\.[0-9a-z\\,–\\.]*)*)",
+	    "tests": {
+		"M2020.39": [
+		    "M2020.39"
+		],
+		"M2019.66": [
+		    "M2019.66"
+		],		
+		"M2019.117.1a,b–.5": [
+		    "M2019.117.1a,b–.5"
+		],		
+		"M2019.120.1a,b–4a,b": [
+		    "M2019.120.1a,b–4a,b"
+		],
+		"M2021.371": [
+		    "M2021.371"
+		]
+	    }
+	}
+    ]
+}
