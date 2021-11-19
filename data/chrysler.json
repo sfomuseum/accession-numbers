@@ -1,0 +1,24 @@
+{
+    "organization_name": "The Chrysler Museum of Art",
+    "organization_url": "https://chrysler.org",
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "((?:[A-Z]?\\d{2,4})\\.(?:\\d+)(?:\\.\\d+)*)",
+	    "tests": {
+		"2012.14": [
+		    "2012.14"
+		],
+		"66.34.4": [
+		    "66.34.4"
+		],
+		"71.1079": [
+		    "71.1079"
+		],
+		"L2005.10.159": [
+		    "L2005.10.159"
+		]
+	    }
+	}
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "organization_name": "Georgia O'Keeffe Museum",
+    "organization_url": "https://www.okeeffemuseum.org",
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "((?:(?:\\d{4})|(?:[A-Z]*))\\.(?:\\d+)(?:(?:\\.[0-9a-z]*)*))?",
+	    "tests": {
+		"2006.6.1412": [
+		    "2006.6.1412"
+		],
+		"2006.6.1311": [
+		    "2006.6.1311"
+		],
+		"MS.37": [
+		    "MS.37"
+		],
+		"MS.6": [
+		    "MS.6"
+		],		
+		"2000.5.815v": [
+		    "2000.5.815v"
+		],		
+		"2007.4.42": [
+		    "2007.4.42"
+		]
+	    }
+	}
+    ]
+}

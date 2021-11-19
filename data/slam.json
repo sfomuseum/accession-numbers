@@ -1,0 +1,27 @@
+{
+    "organization_name": "Saint Louis Art Museum",
+    "organization_url": "https://www.slam.org",
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "((?:\\d+)\\:(?:\\d{4})(?:[0-9a-z\\,\\.]*)*)",
+	    "tests": {
+		"138:1947": [
+		    "138:1947"
+		],
+		"7:1946": [
+		    "7:1946"
+		],
+		"9:2016.6": [
+		    "9:2016.6"
+		],
+		"23:1992": [
+		    "23:1992"
+		],
+		"111:2010a,b": [
+		    "111:2010a,b"
+		]
+	    }
+	}
+    ]
+}
