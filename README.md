@@ -23,6 +23,7 @@ The simplest version of a data file consists of `name` and `url` properties iden
     "iiif_manifest": "https://millsfield.sfomuseum.org/objects/{accession_number}/manifest",
     "oembed_profile": "https://millsfield.sfomuseum.org/oembed/?url=https://millsfield.sfomuseum.org/objects/{accession_number}&format=json",
     "object_url": "https://millsfield.sfomuseum.org/objects/{accession_number}",
+    "whosonfirst_id": 102527513,    
     "patterns": [
 	{
 	    "label": "common",
