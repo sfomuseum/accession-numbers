@@ -1,6 +1,7 @@
 {
     "organization_name": "Smithsonian National Museum of Natural History",
     "organization_url": "http://naturalhistory.si.edu/",
+    "whosonfirst_id": -1,
     "patterns": [
 	{
 	    "label": "common",

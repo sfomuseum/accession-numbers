@@ -1,6 +1,7 @@
 {
     "organization_name": "San Francisco Museum of Modern Art",
     "organization_url": "https://www.sfmoma.org",
+    "whosonfirst_id": 874389425,
     "patterns": [
 	{
 	    "label": "common",

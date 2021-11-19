@@ -1,6 +1,7 @@
 {
     "organization_name": "Seattle Art Museum",
     "organization_url": "https://seattleartmuseum.org",
+    "whosonfirst_id": 756799791,
     "patterns": [
 	{
 	    "label": "common",

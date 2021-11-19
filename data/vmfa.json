@@ -1,6 +1,7 @@
 {
     "organization_name": "Virginia Museum of Fine Arts",
     "organization_url": "https://www.vmfa.museum",
+    "whosonfirst_id": 723241169,
     "patterns": [
 	{
 	    "label": "common",

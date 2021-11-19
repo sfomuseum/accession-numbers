@@ -1,6 +1,7 @@
 {
     "organization_name": "Georgia O'Keeffe Museum",
     "organization_url": "https://www.okeeffemuseum.org",
+    "whosonfirst_id": -1,
     "patterns": [
 	{
 	    "label": "common",

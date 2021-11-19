@@ -1,6 +1,7 @@
 {
     "organization_name": "National Museum of American History",
     "organization_url": "https://americanhistory.si.edu/",
+    "whosonfirst_id": -1,
     "patterns": [
 	{
 	    "label": "common",

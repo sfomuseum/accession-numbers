@@ -1,6 +1,7 @@
 {
     "organization_name": "National Gallery of Art",
     "organization_url": "https://www.nga.gov/",
+    "whosonfirst_id": -1,
     "patterns": [
 	{
 	    "label": "common",

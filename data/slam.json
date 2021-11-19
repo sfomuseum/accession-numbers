@@ -1,6 +1,7 @@
 {
     "organization_name": "Saint Louis Art Museum",
     "organization_url": "https://www.slam.org",
+    "whosonfirst_id": 186319129,
     "patterns": [
 	{
 	    "label": "common",

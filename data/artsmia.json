@@ -1,6 +1,7 @@
 {
     "organization_name": "Minneapolis Art Museum",
     "organization_url": "https://new.artsmia.org",
+    "whosonfirst_id": -1,
     "patterns": [
 	{
 	    "label": "common",

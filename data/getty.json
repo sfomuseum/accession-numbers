@@ -1,6 +1,7 @@
 {
     "organization_name": "Getty Center",
     "organization_url": "https://www.getty.edu",
+    "whosonfirst_id": 1126129917,
     "patterns": [
 	{
 	    "label": "common",

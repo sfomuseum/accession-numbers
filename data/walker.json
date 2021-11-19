@@ -1,6 +1,7 @@
 {
     "organization_name": "Walker Art Center",
     "organization_url": "https://walkerart.org",
+    "whosonfirst_id": 807379211,
     "patterns": [
 	{
 	    "label": "common",

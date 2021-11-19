@@ -1,6 +1,7 @@
 {
     "organization_name": "Milwaukee Art Museum",
     "organization_url": "http://mam.org",
+    "whosonfirst_id": 823134701,
     "patterns": [
 	{
 	    "label": "common",

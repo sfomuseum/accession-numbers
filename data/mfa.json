@@ -1,6 +1,7 @@
 {
     "organization_name": "Museum of Fine Arts Boston",
     "organization_url": "https://www.mfa.org",
+    "whosonfirst_id": 673077805,
     "patterns": [
 	{
 	    "label": "common",

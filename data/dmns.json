@@ -1,6 +1,7 @@
 {
     "organization_name": "Denver Museum of Nature & Science",
     "organization_url": "https://www.dmns.org",
+    "whosonfirst_id": 320495969,
     "patterns": [
 	{
 	    "label": "common",

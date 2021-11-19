@@ -1,6 +1,7 @@
 {
     "organization_name": "National Museum of African American History and Culture",
     "organization_url": "https://nmaahc.si.edu/",
+    "whosonfirst_id": -1,
     "patterns": [
 	{
 	    "label": "common",

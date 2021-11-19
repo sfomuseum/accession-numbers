@@ -1,6 +1,7 @@
 {
     "organization_name": "The Chrysler Museum of Art",
     "organization_url": "https://chrysler.org",
+    "whosonfirst_id": -1,
     "patterns": [
 	{
 	    "label": "common",

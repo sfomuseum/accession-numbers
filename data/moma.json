@@ -1,6 +1,7 @@
 {
     "organization_name": "Museum of Modern Art",
     "organization_url": "https://www.moma.org",
+    "whosonfirst_id": 303346985,
     "patterns": [
 	{
 	    "label": "common",

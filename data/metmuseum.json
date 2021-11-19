@@ -1,6 +1,7 @@
 {
     "organization_name": "Metropolitan Museum of Art",
     "organization_url": "https://www.metmuseum.org",
+    "whosonfirst_id": 304023943,
     "patterns": [
 	{
 	    "label": "common",

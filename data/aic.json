@@ -1,6 +1,7 @@
 {
     "organization_name": "Art Institute of Chicago",
     "organization_url": "https://www.artic.edu",
+    "whosonfirst_id": 756110711,
     "patterns": [
 	{
 	    "label": "common",

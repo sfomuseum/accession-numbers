@@ -1,6 +1,7 @@
 {
     "organization_name": "Baltimore Museum of Art",
     "organization_url": "https://artbma.org",
+    "whosonfirst_id": 757060481,
     "patterns": [
 	{
 	    "label": "common",

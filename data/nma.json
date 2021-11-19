@@ -1,6 +1,7 @@
 {
     "organization_name": "National Museum of Anthropology",
     "organization_url": "https://museu.ms/museum/details/16762",
+    "whosonfirst_id": -1,
     "patterns": [
 	{
 	    "label": "common",
