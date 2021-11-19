@@ -1,0 +1,24 @@
+{
+    "organization_name": "Museum of Fine Arts Boston",
+    "organization_url": "https://www.mfa.org",
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "((?:\\d{2,4})\\.(?:\\d+[A-Z]*))",
+	    "tests": {
+		"2007.600": [
+		    "2007.600"
+		],
+		"99.101": [
+		    "99.101"
+		],
+		"11.24732B": [
+		    "11.24732B"
+		],
+		"17.2230": [
+		    "17.2230"
+		]
+	    }
+	}
+    ]
+}
