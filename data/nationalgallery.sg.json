@@ -1,0 +1,27 @@
+{
+    "organization_name": "National Gallery Singapore",
+    "organization_url": "https://www.nationalgallery.sg",
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "((?:(?:\\d+)|(?:[A-Z]+))-(?:[A-Z0-9]+)(?:-[A-Z0-9.]+)*)",
+	    "tests": {
+		"2003-03691": [
+		    "2003-03691"
+		],
+		"ASB-0036": [
+		    "ASB-0036"
+		],
+		"2001-03415": [
+		    "2001-03415"
+		],
+		"RC-S2-CCS2.6": [
+		    "RC-S2-CCS2.6"
+		],
+		"2010-04133": [
+		    "2010-04133"
+		]
+	    }
+	}
+    ]
+}
