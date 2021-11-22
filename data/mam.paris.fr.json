@@ -1,0 +1,30 @@
+{
+    "organization_name": "Musée National d'Art Moderne (Centre Pompidou)",
+    "organization_url": "https://www.mam.paris.fr",
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "((?:[A-Z]+)(?:\\ |-|-)(?:\\d+)(?:(?:-[0-9]+)|(?:\\ (?:[0-9]+))|(?:[A-Z]+))*)",
+	    "tests": {
+		"AMPH 204": [
+		    "AMPH 204"
+		],
+		"AMS 403": [
+		    "AMS 403"
+		],
+		"AMVP-2015-277": [
+		    "AMVP-2015-277"
+		],
+		"AMVP-2015-975": [
+		    "AMVP-2015-975"
+		],
+		"AME 1104 (2)": [
+
+		],		
+		"AMPH 871TER": [
+		    "AMPH 871TER"
+		]
+	    }
+	}
+    ]
+}
