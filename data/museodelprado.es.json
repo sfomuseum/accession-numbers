@@ -1,0 +1,27 @@
+{
+    "organization_name": "Museo del Prado",
+    "organization_url": "https://www.museodelprado.es",
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "([A-Z]\\d+)",
+	    "tests": {
+		"E000028": [
+		    "E000028"
+		],
+		"D003874": [
+		    "D003874"
+		],
+		"P002179": [
+		    "P002179"
+		],
+		"P000299": [
+		    "P000299"
+		],
+		"P002132": [
+		    "P002132"
+		]
+	    }
+	}
+    ]
+}
