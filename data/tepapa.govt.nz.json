@@ -1,0 +1,30 @@
+{
+    "organization_name": "Museum of New Zealand Te Papa Tongarewa",
+    "organization_url": "https://www.tepapa.govt.nz",
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "((?:[A-Z]+[0-9]+[/A-Z])|(?:(?:\\d+)-(?:\\d+)-(?:\\d+)(?:/[A-z\\ -]+)))",
+	    "tests": {
+		"ME001533": [
+
+		],
+		"2014-0031-1": [
+
+		],
+		"GH004839": [
+
+		],
+		"2008-0006-1/A-L to L-L": [
+
+		],
+		"OL000491": [
+
+		],		
+		"SP082549/A": [
+
+		]
+	    }
+	}
+    ]
+}
