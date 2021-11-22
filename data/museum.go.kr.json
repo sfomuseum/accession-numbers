@@ -1,0 +1,24 @@
+{
+    "organization_name": "National Museum of Korea",
+    "organization_url": "https://www.museum.go.kr",
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "((?:[A-z]+)\\ (?:\\d+)(?:~[0-9]+)*)",
+	    "tests": {
+		"Deoksu 2327": [
+		    "Deoksu 2327"
+		],
+		"Buyeo 5333": [
+		    "Buyeo 5333"
+		],
+		"Hwangbuk 45": [
+		    "Hwangbuk 45"
+		],
+		"Sinsu 2578~2583": [
+		    "Sinsu 2578~2583"
+		]
+	    }
+	}
+    ]
+}
