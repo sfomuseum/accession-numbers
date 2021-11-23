@@ -1,0 +1,24 @@
+{
+    "organization_name": "Vatican Museums",
+    "organization_url": "http://www.museivaticani.va/",
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "((?:MV)\\.(?:\\d+)(?:\\.[0-9])*)",
+	    "tests": {
+		"MV.22690.0.0": [
+		    "MV.22690.0.0"
+		],
+		"MV.30565.0.0": [
+		    "MV.30565.0.0"
+		],
+		"MV.16757.0.0": [
+		    "MV.16757.0.0"
+		],
+		"MV.2290.0.0": [
+		    "MV.2290.0.0"
+		]
+	    }
+	}
+    ]
+}

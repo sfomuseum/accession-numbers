@@ -58,7 +58,7 @@ func runTests(def *accessionnumbers.Definition) error {
 			// problamatic
 
 			if len(expected_results) == 0 {
-				log.Printf("[%s] SKIP %s\n", def.OrganizationURL, str)
+				log.Printf("[%s] SKIP %s\n", def.OrganizationURI, str)
 				continue
 			}
 
@@ -82,7 +82,7 @@ func runTests(def *accessionnumbers.Definition) error {
 				}
 			}
 
-			log.Printf("[%s] OK %s\n", def.OrganizationURL, str)
+			log.Printf("[%s] OK %s\n", def.OrganizationURI, str)
 		}
 	}
 

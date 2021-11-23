@@ -53,8 +53,6 @@ This would yield:
 
 "Definition" files are provided by the [sfomuseum/accession-numbers](https://github.com/sfomuseum/accession-numbers) package.
 
-_Note: As of this writing this package assumes that definition file structure that hasn't been adopted by the `main` branch of the `accession-numbers` package yet._
-
 ```
 package main
 
