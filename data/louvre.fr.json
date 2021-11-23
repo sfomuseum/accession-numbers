@@ -1,0 +1,36 @@
+{
+    "organization_name": "Musée du Louvre",
+    "organization_url": "https://www.louvre.fr/",
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "((?:[A-z]+\\ )+(?:\\d+)(?:\\ [a-z-]+)*)",
+	    "tests": {
+		"INV 3699": [
+		    "INV 3699"
+		],
+		"MV 1437": [
+		    "MV 1437"
+		],
+		"INV 7492": [
+		    "INV 7492"
+		],
+		"MR 2391": [
+		    "MR 2391"
+		],
+		"N III 2856": [
+		    "N III 2856"
+		],
+		"LP 3484": [
+		    "LP 3484"
+		],
+		"Ma 399": [
+		    "Ma 399"
+		],
+		"ECL 22281 a-b": [
+		    "ECL 22281 a-b"
+		]
+	    }
+	}
+    ]
+}
