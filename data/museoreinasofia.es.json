@@ -1,0 +1,27 @@
+{
+    "organization_name": "Museo Reina Sofía",
+    "organization_url": "https://www.museoreinasofia.es",
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "((?:[A-Z]+(?:\\d+)(?:[--][0-9]+)*))",
+	    "tests": {
+		"DO01292": [
+		    "DO01292"
+		],
+		"DO03586-005": [
+		    "DO03586-005"
+		],		
+		"AS02157": [
+		    "AS02157"
+		],
+		"DO02613-002": [
+		    "DO02613-002"
+		],
+		"DE00050": [
+		    "DE00050"
+		]
+	    }
+	}
+    ]
+}
