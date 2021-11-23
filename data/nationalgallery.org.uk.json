@@ -1,0 +1,30 @@
+{
+    "organization_name": "National Gallery",
+    "organization_url": "https://www.nationalgallery.org.uk",
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "((?:[A-Z]+)(?:\\d+))",
+	    "tests": {
+		"NG1938": [
+		    "NG1938"
+		],
+		"L720": [
+		    "L720"
+		],
+		"L767": [
+		    "L767"
+		],
+		"NG300": [
+		    "NG300"
+		],
+		"NG3863": [
+		    "NG3863"
+		],		
+		"NG672": [
+		    "NG672"
+		]
+	    }
+	}
+    ]
+}

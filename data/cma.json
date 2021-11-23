@@ -1,0 +1,24 @@
+{
+    "organization_name": "The Cleveland Museum of Art",
+    "organization_url": "https://www.clevelandart.org",
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "((?:\\d{4})\\.(?:\\d+)(?:\\.[a-z]*)*)",
+	    "tests": {
+		"1968.40": [
+		    "1968.40"
+		],
+		"2018.203": [
+		    "2018.203"
+		],
+		"1962.37": [
+		    "1962.37"
+		],		
+		"1915.533.b": [
+		    "1915.533.b"
+		]
+	    }
+	}
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "organization_name": "Dallas Museum of Art",
+    "organization_url": "https://dma.org",
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "((?:\\d{4})\\.(?:(?:\\d+)|(?:[A-Z]*))\\.(?:\\d+)(?:\\.[A-Z\\-]*)*)",
+	    "tests": {
+		"1991.15.2": [
+		    "1991.15.2"
+		],
+		"1992.B.232.A-B": [
+		    "1992.B.232.A-B"
+		],
+		"1989.141.96": [
+		    "1989.141.96"
+		]
+	    }
+	}
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "organization_name": "The Broad Museum",
+    "organization_url": "https://www.thebroad.org",
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "((?:[A-Z])\\-(?:[A-Z]{4})\\-(?:[A-Z0-9]{4})\\.(?:\\d+))",
+	    "tests": {
+		"F-SAVI-1P05.15": [
+		    "F-SAVI-1P05.15"
+		],
+		"B-WARH-2019.003": [
+		    "B-WARH-2019.003"
+		],
+		"F-TWOM-2015.014": [
+		    "F-TWOM-2015.014"
+		],
+		"F-KRUG-1F89.17": [
+		    "F-KRUG-1F89.17"
+		]
+	    }
+	}
+    ]
+}

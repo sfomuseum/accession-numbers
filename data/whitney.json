@@ -1,0 +1,27 @@
+{
+    "organization_name": "Whitney Museum of American Art",
+    "organization_url": "https://whitney.org",
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "((?:[A-Z]\\.)*(?:\\d{4})\\.(?:\\d+(?:[a-z\\-]*))(?:\\.[0-9]*)*)",
+	    "tests": {
+		"2020.147": [
+		    "2020.147"
+		],
+		"2021.3": [
+		    "2021.3"
+		],
+		"2020.122a-b": [
+		    "2020.122a-b"
+		],
+		"2020.73.4": [
+		    "2020.73.4"
+		],
+		"P.2021.3": [
+		    "P.2021.3"
+		]
+	    }
+	}
+    ]
+}
