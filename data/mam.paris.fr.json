@@ -1,6 +1,7 @@
 {
     "organization_name": "Musée National d'Art Moderne (Centre Pompidou)",
     "organization_url": "https://www.mam.paris.fr",
+    "whosonfirst_id": -1,
     "patterns": [
 	{
 	    "label": "common",

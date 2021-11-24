@@ -1,6 +1,7 @@
 {
     "organization_name": "Vatican Museums",
     "organization_url": "http://www.museivaticani.va/",
+    "whosonfirst_id": -1,
     "patterns": [
 	{
 	    "label": "common",

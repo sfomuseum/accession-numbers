@@ -1,6 +1,7 @@
 {
     "organization_name": "Museo del Prado",
     "organization_url": "https://www.museodelprado.es",
+    "whosonfirst_id": -1,
     "patterns": [
 	{
 	    "label": "common",

@@ -1,6 +1,7 @@
 {
     "organization_name": "Musée d'Orsay",
     "organization_url": "https://www.musee-orsay.fr",
+    "whosonfirst_id": -1,
     "patterns": [
 	{
 	    "label": "common",

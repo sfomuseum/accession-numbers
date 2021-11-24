@@ -1,6 +1,7 @@
 {
     "organization_name": "Musée du Louvre",
     "organization_url": "https://www.louvre.fr/",
+    "whosonfirst_id": 152100491,
     "patterns": [
 	{
 	    "label": "common",

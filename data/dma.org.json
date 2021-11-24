@@ -1,6 +1,7 @@
 {
     "organization_name": "Dallas Museum of Art",
     "organization_url": "https://dma.org",
+    "whosonfirst_id": 622837191,
     "patterns": [
 	{
 	    "label": "common",

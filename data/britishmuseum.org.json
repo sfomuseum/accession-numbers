@@ -1,6 +1,7 @@
 {
     "organization_name": "British Museum",
     "organization_url": "https://www.britishmuseum.org",
+    "whosonfirst_id": 907992053,
     "patterns": [
 	{
 	    "label": "common",
