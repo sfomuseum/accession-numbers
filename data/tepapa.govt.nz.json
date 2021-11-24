@@ -1,6 +1,7 @@
 {
     "organization_name": "Museum of New Zealand Te Papa Tongarewa",
     "organization_url": "https://www.tepapa.govt.nz",
+    "whosonfirst_id": 219380183,
     "patterns": [
 	{
 	    "label": "common",

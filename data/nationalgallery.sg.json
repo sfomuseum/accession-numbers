@@ -1,6 +1,7 @@
 {
     "organization_name": "National Gallery Singapore",
     "organization_url": "https://www.nationalgallery.sg",
+    "whosonfirst_id": -1,
     "patterns": [
 	{
 	    "label": "common",

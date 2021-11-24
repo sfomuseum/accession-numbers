@@ -1,6 +1,7 @@
 {
     "organization_name": "Museo Reina Sofía",
     "organization_url": "https://www.museoreinasofia.es",
+    "whosonfirst_id": -1,
     "patterns": [
 	{
 	    "label": "common",

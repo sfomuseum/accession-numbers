@@ -1,6 +1,7 @@
 {
     "organization_name": "National Museum of Korea",
     "organization_url": "https://www.museum.go.kr",
+    "whosonfirst_id": -1,
     "patterns": [
 	{
 	    "label": "common",

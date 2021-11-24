@@ -1,6 +1,7 @@
 {
     "organization_name": "Whitney Museum of American Art",
     "organization_url": "https://whitney.org",
+    "whosonfirst_id": 571734031,
     "patterns": [
 	{
 	    "label": "common",

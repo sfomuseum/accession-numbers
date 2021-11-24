@@ -1,6 +1,7 @@
 {
     "organization_name": "The Broad Museum",
     "organization_url": "https://www.thebroad.org",
+    "whosonfirst_id": 907219091,
     "patterns": [
 	{
 	    "label": "common",

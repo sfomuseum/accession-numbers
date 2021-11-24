@@ -1,6 +1,7 @@
 {
     "organization_name": "Tate Modern",
     "organization_url": "https://www.tate.org.uk",
+    "whosonfirst_id": 923796649,
     "patterns": [
 	{
 	    "label": "common",

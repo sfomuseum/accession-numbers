@@ -1,6 +1,7 @@
 {
     "organization_name": "National Gallery",
     "organization_url": "https://www.nationalgallery.org.uk",
+    "whosonfirst_id": 924252567,
     "patterns": [
 	{
 	    "label": "common",
