@@ -1,0 +1,42 @@
+{
+  "$id": "https://example.com/definition.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "...",
+  "type": "object",
+    "required": [ "organization_name", "organization_url", "patterns" ],
+    "properties": {
+	"organization_name": {
+	    "type": "string",
+	    "description": "The name of an organization."
+	},
+	"organization_url": {
+	    "type": "string",
+	    "description": "The principal URL of an organization."
+	},
+	"whosonfirst_id": {
+	    "type": "int",
+	    "description": "A valid Who's On First ID for an organization."
+	},
+	"iiif_manifest": {
+	    "type": "string",
+	    "description": "A valid URI template (RFC 6570) for deriving a IIIF manifest URL for an accession number."
+	},
+	"oembed_profile": {
+	    "type": "string",
+	    "description": "A valid URI template (RFC 6570) for deriving an OEmbed profile URL for an accession number."
+	},
+	"object_url": {
+	    "type": "string",
+	    "description": "A valid URI template (RFC 6570) for deriving object webpage URL for an accession number."
+	},
+	"patterns": {
+	    "type": "array",
+	    "items": "string"
+	}
+    }
+}
+
+		
+
+	
+	

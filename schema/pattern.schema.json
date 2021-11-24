@@ -1,0 +1,26 @@
+{
+  "$id": "https://example.com/definition.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "...",
+  "type": "object",
+    "required": [ "label", "pattern" ],
+    "properties": {
+	"label": {
+	    "type": "string",
+	    "description": "A name or label for a pattern."
+	},
+	"pattern": {
+	    "type": "string",
+	    "description": "A valid regular expression that can be compiled and used to extract accession numbers from a body of text."
+	},
+	"tests": {
+	    "type": "array",
+	    "items": "string"
+	}
+    }
+}
+
+		
+
+	
+	
