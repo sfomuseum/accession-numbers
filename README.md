@@ -4,7 +4,7 @@ Machine-readable regular expressions for identifying accession numbers for cultu
 
 ## Important
 
-This is work in progress. Things may still change.
+This is work in progress. Things are starting to settle down but may still change.
 
 ## Motivation
 
@@ -12,9 +12,38 @@ The goal of this package is to have a collection of machine-readable regular exp
 
 ## Data
 
-Data for individual organizations are defined in [`data/{organization}.json`](data) files. These files lack a [well-defined schema](https://github.com/sfomuseum/accession-numbers/issues/20) at this time.
+Data for individual organizations are defined in [`data/{organization}.json`](data) files. These files conform the JSON schema (draft/2020-12) defined in the [schema](schema) folder.
 
 The simplest version of a data file consists of `name` and `url` properties identifying an organization and a `patterns` properties which contains one or more dictionaries containing regular expression patterns that can be used to isolate accession numbers in a body of text. For example:
+
+```
+{
+    "organization_name": "National Air and Space Museum",
+    "organization_url": "https://airandspace.si.edu/",
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "((?:\\D)(?:\\d{4})(?:\\d)+)",
+	    "tests": {
+		"A19610048000": [
+		    "A19610048000"
+		],
+		"A19670093000": [
+		    "A19670093000"
+		],
+		"A19920072000": [
+		    "A19920072000"
+		],
+		"A19670176000": [
+		    "A19670176000"
+		]
+	    }
+	}
+    ]
+}
+```
+
+Here is a complete example, containing all the possible properties defined in the schema:
 
 ```
 {
