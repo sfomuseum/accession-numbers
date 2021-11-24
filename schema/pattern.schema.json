@@ -1,7 +1,7 @@
 {
   "$id": "https://example.com/definition.schema.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "description": "...",
+  "description": "A regular expression pattern and zero or more tests for matching accession numbers.",
   "type": "object",
     "required": [ "label", "pattern" ],
     "properties": {
@@ -14,8 +14,13 @@
 	    "description": "A valid regular expression that can be compiled and used to extract accession numbers from a body of text."
 	},
 	"tests": {
-	    "type": "array",
-	    "items": "string"
+	    "patternProperties": {
+		"^.*$": {
+		    "type": "array",
+		    "items": "string"
+		}
+	    },
+	    "additionalProperties": false	    
 	}
     }
 }

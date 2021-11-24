@@ -1,7 +1,7 @@
 {
   "$id": "https://example.com/definition.schema.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "description": "...",
+  "description": "An organization-specific definition for an organization, the patterns used to match accession numbers and optional property for resolving accession numbers.",
   "type": "object",
     "required": [ "organization_name", "organization_url", "patterns" ],
     "properties": {
@@ -31,7 +31,7 @@
 	},
 	"patterns": {
 	    "type": "array",
-	    "items": "string"
+	    "$ref": "pattern.schema.json#/definitions/pattern"
 	}
     }
 }
