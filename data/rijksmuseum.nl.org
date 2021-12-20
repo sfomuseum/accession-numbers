@@ -1,0 +1,44 @@
+{
+    "organization_name": "Rijksmuseum",
+    "organization_url": "https://www.rijksmuseum.nl",
+    "object_url": "https://www.rijksmuseum.nl/en/collection/{accession_number}",    
+    "whosonfirst_id": -1,    
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "",
+	    "tests": {
+		"AK-BR-325": [
+		    "AK-BR-325"
+		],
+		"2RP-F-2001-7-1020-41": [
+		    "2RP-F-2001-7-1020-41"
+		]		
+		"-1RP-F-2001-7-1480": [
+		    "-1RP-F-2001-7-1480"
+		],
+		"AK-BR-FLA-1": [
+		    "AK-BR-FLA-1"
+                ],
+		"V-71699-1": [
+		    "V-71699-1"
+		],
+		"V-570": [
+			"V-570"
+		],
+		"AK-MAK-706": [
+			"AK-MAK-706"
+		],
+		"AK-NM-13198-C": [
+			"AK-NM-13198-C"
+		],
+		"AK-NM-13226": [
+			"AK-NM-13226"
+		],
+		"AK-NM-13598-1": [
+			"AK-NM-13598-1"
+		]
+	    }
+	}
+    ]
+}
