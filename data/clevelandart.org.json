@@ -1,7 +1,8 @@
 {
     "organization_name": "The Cleveland Museum of Art",
     "organization_url": "https://www.clevelandart.org",
-    "whosonfirst_id": 706599119,
+    "object_url": "https://www.clevelandart.org/art/{accession_number}",    
+    "whosonfirst_id": 706599119,    
     "patterns": [
 	{
 	    "label": "common",
