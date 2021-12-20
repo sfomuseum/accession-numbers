@@ -1,0 +1,20 @@
+{
+    "organization_name": "Ingenium",
+    "organization_url": "https://ingeniumcanada.org/",
+    "object_url": "https://ingeniumcanada.org/ingenium/collection-research/collection-item.php?id={accession_number}",    
+    "whosonfirst_id": -1,    
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "((?:\\d{4})\\.(?:\\d{4})\\.(?:\\d{3}))",
+	    "tests": {
+		"1991.1048.002": [
+		    "1991.1048.002"
+		],
+		"Artifact no. :\n\n 1967.0870.001": [
+		    "1967.0870.001"
+		]		
+	    }
+	}
+    ]
+}
