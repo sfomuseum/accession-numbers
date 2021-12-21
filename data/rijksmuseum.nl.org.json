@@ -6,7 +6,7 @@
     "patterns": [
     {
 	    "label": "common",
-	    "pattern": "((?:\\-?[0-9A-Z]+){1,})",
+	    "pattern": "((?:\\-?(?:[A-Z]{1,}|(?:\\d[A-Z]{1,}))\\-[0-9A-Z]+(?:(?:\\-[0-9A-Z]+){1,})?))",
 	    "tests": {
 		"AK-BR-325": [
 		    "AK-BR-325"
@@ -37,6 +37,14 @@
 		],
 		"AK-NM-13598-1": [
 			"AK-NM-13598-1"
+		],
+		"Title(s) Ovoid vase with a red glaze\\nObject type vase\\nObject number AK-BR-325\\nDescription Eivormige vaas van porselein met een dunne nek met trompetvormige mond, bedekt met een monochroom, licht gecraqueleerd rood (sang de boeuf) glazuur. Binnen de voetring deels geglazuurd; liprand is wit. Monochromen.": [
+		    "AK-BR-325"
+		],
+		"This is an object\\nGift of Important Donor\\nAK-NM-13198-C\\n\\nThis is another object\\nAnonymouts Gift\\nV-570\\n2RP-F-2001-7-1020-41\\nBronze": [
+		    "AK-NM-13198-C",
+		    "V-570",
+		    "2RP-F-2001-7-1020-41"
 		]
 	    }
 	}
