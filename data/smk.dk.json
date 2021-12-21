@@ -1,0 +1,26 @@
+{
+    "organization_name": "National Gallery of Denmark",
+    "organization_url": "https://www.smk.dk/",
+    "object_url": "https://open.smk.dk/en/artwork/image/{accession_number}",
+    "iiif_manifest":" https://api.smk.dk/api/v1/iiif/manifest/?id={accession_number}",
+    "whosonfirst_id": -1,    
+    "patterns": [
+    {
+	    "label": "common",
+	    "pattern": "(KMS\\d+)",
+	    "tests": {
+		"KMS3351": [
+		    "KMS3351"
+		],
+		"Title Self-Portrait. The Cottage Spurveskjul at Sorgenfri, North of Copenhagen\\nProduction date 1911\\nWork type Painting\\nInventory number KMS3351\\nNot on display\\nArtist/maker Vilhelm Hammershøi 1864 – 1916\\nNumber of parts 1\\nTechniques Oil on canvas\\nDimensions 126cm (h) x 149.5cm (w)": [
+    "KMS3351"
+],
+		"This is an object\\nGift of Important Donor\\nKMS3351\\n\\nThis is another object\\nAnonymouts Gift\\nKMS6373\\nKMS1849\\nBronze": [
+		    "KMS3351",
+		    "KMS6373",
+		    "KMS1849"
+		]
+	    }
+	}
+    ]
+}
