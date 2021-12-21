@@ -4,16 +4,16 @@
     "object_url": "https://www.rijksmuseum.nl/en/collection/{accession_number}",    
     "whosonfirst_id": -1,    
     "patterns": [
-	{
+    {
 	    "label": "common",
-	    "pattern": "",
+	    "pattern": "((?:\\-?[0-9A-Z]+){1,})",
 	    "tests": {
 		"AK-BR-325": [
 		    "AK-BR-325"
 		],
 		"2RP-F-2001-7-1020-41": [
 		    "2RP-F-2001-7-1020-41"
-		]		
+		],		
 		"-1RP-F-2001-7-1480": [
 		    "-1RP-F-2001-7-1480"
 		],
