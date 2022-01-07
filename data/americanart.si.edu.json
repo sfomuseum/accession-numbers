@@ -1,0 +1,37 @@
+{
+  "organization_name": "Smithsonian American Art Museum and Renwick Gallery",
+  "organization_url": "https://americanart.si.edu/",
+  "object_url": "https://americanart.si.edu/objects/{accession_number}",
+  "patterns": [
+    {
+      "label": "common",
+      "pattern": "((?:XX\\d+[A-Z]{0,3}\\d?)|(?:\\d+\\.(?:\\d+)\\.?(?:\\d+(?:[A-Z])?(?:-[A-Z])?)?(?:(?:\\.|,)(?:\\d+))?(?:(?:[A-Z-]-[A-Z])+)?))",
+      "tests": {
+        "1994.18.175": [
+          "1994.18.175"
+        ],
+        "1985.55": [
+          "1985.55"
+        ],
+        "1972.167.30A": [
+          "1972.167.30A"
+        ],
+        "XX105": [
+          "XX105"
+        ],
+        "1985.66.387,773": [
+          "1985.66.387,773"
+        ],
+        "1967.59.436R-V": [
+          "1967.59.436R-V"
+        ],
+        "This is an object\\nGift of Important Donor\\n1994.18.175\\n\\nThis is another object\\nAnonymous Gift\\n1980.97A-C 1929.7.167V\\nXX98H  \\nOil on canvas": [
+          "1994.18.175",
+          "1980.97A-C",
+          "1929.7.167V",
+          "XX98H"
+        ]
+      }
+    }
+  ]
+}
