@@ -5,13 +5,25 @@
   "patterns": [
     {
       "label": "common",
-      "pattern": "((?:XX\\d+[A-Z]{0,3}\\d?)|(?:\\d+\\.(?:\\d+)\\.?(?:\\d+(?:[A-Z])?(?:-[A-Z])?)?(?:(?:\\.|,)(?:\\d+))?(?:(?:[A-Z-]-[A-Z])+)?))",
+      "pattern": "((?:XX\\d+[A-Z]{0,3}\\d?)|(?:(?:(?:(?:18|19|20)[0-9]{2})|AHS|RF)\\.(?:\\d+)\\.?(?:\\d+(?:[A-Z])?(?:-[A-Z])?)?(?:(?:\\.|,)(?:\\d+))?(?:(?:[A-Z-]-[A-Z])+)?))",
       "tests": {
         "1994.18.175": [
           "1994.18.175"
         ],
-        "1985.55": [
-          "1985.55"
+        "1882.1.1": [
+          "1882.1.1"
+        ],
+        "2000.5": [
+          "2000.5"
+        ],
+        "RF.3.138": [
+          "RF.3.138"
+        ],
+        "RF.3.310A-B": [
+          "RF.3.310A-B"
+        ],
+        "AHS.1008": [
+          "AHS.1008"
         ],
         "1972.167.30A": [
           "1972.167.30A"
@@ -25,7 +37,7 @@
         "1967.59.436R-V": [
           "1967.59.436R-V"
         ],
-        "This is an object\\nGift of Important Donor\\n1994.18.175\\n\\nThis is another object\\nAnonymous Gift\\n1980.97A-C 1929.7.167V\\nXX98H  \\nOil on canvas": [
+        "This is an object\\nGift of Important Donor\\n1994.18.175\\n\\nThis is another object\\nAnonymous Gift\\n1980.97A-C 1929.7.167V\\nXX98H  \\nOil on canvas\\nDimensions 40 x 50 1⁄8 in. (101.6 x 127.2 cm.)": [
           "1994.18.175",
           "1980.97A-C",
           "1929.7.167V",
