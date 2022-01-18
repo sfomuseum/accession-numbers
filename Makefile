@@ -5,3 +5,10 @@ tests:
 
 docs:
 	cd cmd && make docs && cd -
+
+index:
+	cd data && ls -a *.json > index.txt && cd -
+
+release:
+	@make docs
+	@make index
