@@ -1,0 +1,110 @@
+{
+    "organization_name": "Victoria and Albert Museum",
+    "organization_url": "https://www.vam.ac.uk/",
+    "object_url": "https://collections.vam.ac.uk/search/?q_accession_number={accession_number}",
+    "patterns": [
+	{
+	    "label": "common",
+	    "pattern": "(?:((?i)\\w+(?:\\:|\\.)(?:\\s)?\\w+(?:\\s\\w+|\\s\\w+\\s\\w+)?(?:\\.|\\:|\\,|\\s)(?:\\d+|\\w+)?(?:\\w+|\\&\\w+)?(?:\\:\\d+)?(?:\\sto\\s\\d+|\\sto\\s\\d+\\-\\d+|\\,\\d+\\-\\d+)?(?:\\,\\s\\d+)?(?:\\-\\d+)?))",
+	    "tests": {
+	    "BGM: ARCHIVE.1": [
+		    "BGM: ARCHIVE.1"
+		],
+		"MES.LOST.16": [
+		    "MES.LOST.16"
+		],
+		"W.1 to 4-2018": [
+		    "W.1 to 4-2018"
+		],
+		"GE.372:115-1967": [
+		    "GE.372:115-1967"
+		],
+		"CIRC.1 to B-1975": [
+		    "CIRC.1 to B-1975"
+		],
+		"LOAN:POTELIAKHOFF.1 to 27": [
+		    "LOAN:POTELIAKHOFF.1 to 27"
+		],
+		"LOAN:KEATLEY.1:2": [
+		    "LOAN:KEATLEY.1:2"
+		],
+		"LOAN:QATAR.1:1 to 5": [
+		    "LOAN:QATAR.1:1 to 5"
+		],
+		"LOAN:BARCLAYS BANK.1:1, 2": [
+		    "LOAN:BARCLAYS BANK.1:1, 2"
+		],
+		"LOAN:ALL SAINTS.1-2005": [
+		    "LOAN:ALL SAINTS.1-2005"
+		],
+		"LOAN.AMERICANFRIENDS.710:27-2015": [
+		    "LOAN.AMERICANFRIENDS.710:27-2015"
+		],	
+		"LOAN:GRIEBEL.1, 2-2004": [
+		    "LOAN:GRIEBEL.1, 2-2004"
+		],
+		"LOAN:IND ANON.1 to 3-2007": [
+		    "LOAN:IND ANON.1 to 3-2007"
+		],
+		"LOAN:LONDONDERRY.10:1 TO 21-2013": [
+		    "LOAN:LONDONDERRY.10:1 TO 21-2013"
+		],
+		"Loan:Gilbert.579:1,2-2008": [
+		    "Loan:Gilbert.579:1,2-2008"
+		],
+		"LOAN:NETTLECOMBE.1A": [
+		    "LOAN:NETTLECOMBE.1A"
+		],
+		"LOAN:MUMBY.1&A": [
+		    "LOAN:MUMBY.1&A"
+		]
+	}
+	},
+	{
+	    "label": "type1",
+	    "pattern": "(?:((?i)\\w+(?:\\:|\\.)(?:\\s)?(?:\\w+|\\d+)?(?:\\&\\d+)?(?:\\-\\d+)?)?)",
+	    "tests": {
+	    "MBD.10": [
+		    "MBD.10"
+		],
+		"CM.1A": [
+		    "CM.1A"
+		],
+		"MISC.1-1902": [
+		    "MISC.1-1902"
+		],
+		"AP.1&2-1918": [
+		    "AP.1&2-1918"
+		],
+		"IS.90-1959": [
+		    "IS.90-1959"
+		]
+}
+	},
+		{
+	    "label": "type2",
+	    "pattern": "(?:((?i)\\d+(?:\\w+)?(?:\\:|\\-)?(?:\\d+)?(?:\\,|\\/)?(?:\\s)?(?:\\()?(?:\\w+)?(?:\\))?)?)",
+	    "tests": {
+	    "0100(IS)": [
+		    "0100(IS)"
+		],
+		"01001:1/(IS)": [
+		    "01001:1/(IS)"
+		],
+		"0750A/IS": [
+		    "0750A/IS"
+		],
+		"1000-1902": [
+		    "1000-1902"
+		],
+		"10003:15": [
+		    "10003:15"
+		],
+		"10022A/2": [
+		    "10022A/2"
+		]
+}
+	}
+	
+ ]   
+}
