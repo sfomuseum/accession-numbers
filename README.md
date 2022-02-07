@@ -154,6 +154,7 @@ Contributions for missing organizations and corrections for existing patterns ar
 
 ## Contributors
 
+* [Shehar Bano](https://github.com/sheharbano96)
 * [Eric Pugh](https://github.com/ericpugh)
 * [nikhil trivedi](https://github.com/nikhiltri)
 * [Bruce Wyman](https://github.com/bwyman)
