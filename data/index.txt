@@ -42,6 +42,7 @@ smk.dk.json
 tate.org.uk.json
 tepapa.govt.nz.json
 thebroad.org.json
+vam.ac.uk.json
 vmfa.museum.json
 walkerart.org.json
 whitney.org.json
