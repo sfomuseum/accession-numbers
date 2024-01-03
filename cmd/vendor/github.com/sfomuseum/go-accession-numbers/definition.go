@@ -2,6 +2,7 @@ package accessionnumbers
 
 import (
 	"fmt"
+
 	"github.com/jtacoma/uritemplates"
 )
 
